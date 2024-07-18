@@ -1,6 +1,5 @@
 
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'components/my_button.dart';
@@ -19,7 +18,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +30,7 @@ class LoginPage extends StatelessWidget {
             ),
 
             //message
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Text(
@@ -40,7 +39,7 @@ class LoginPage extends StatelessWidget {
                   fontSize: 16, color: Theme.of(context).colorScheme.primary),
             ),
             // textfield
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             MyTextField(
@@ -48,7 +47,7 @@ class LoginPage extends StatelessWidget {
               obscureText: false,
               controller: _emailController,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             MyTextField(
@@ -58,7 +57,7 @@ class LoginPage extends StatelessWidget {
             ),
             // textfield ended
 
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             // login button code
@@ -67,7 +66,7 @@ class LoginPage extends StatelessWidget {
               onTap: () => {},
             ),
 
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             // register now
